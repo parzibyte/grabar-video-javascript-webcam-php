@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grabar vídeo de cámara con JavaScript y enviar a PHP by parzibyte</title>
+</head>
+<!--
+    * Grabar vídeo y audio obtenido del micrófono y cámara web
+    * con JavaScript, seleccionando el dispositivo de grabación de audio
+    * y el dispositivo de vídeo (cámara web) de una lista; 
+    * usando MediaRecorder y getUserMedia
+    * 
+    * Extra: enviar el vídeo a un servidor con PHP y guardarlo en el disco duro
+    * 
+    * @author parzibyte
+    * @see https://parzibyte.me/blog
+-->
+
+<body>
+    <h1>Grabar vídeo de cámara con JavaScript y enviar a PHP</h1>
+    <a href="//parzibyte.me/blog" target="_blank">By Parzibyte</a>
+    <div>
+        <label for="dispositivosDeAudio">Micrófono:</label><br>
+        <select name="dispositivosDeAudio" id="dispositivosDeAudio"></select>
+        <br><br>
+        <label for="dispositivosDeVideo">Cámara:</label><br>
+        <select name="dispositivosDeVideo" id="dispositivosDeVideo"></select>
+        <br><br>
+        <video muted="muted" id="video"></video>
+        <br><br>
+        <p id="duracion"></p>
+        <br>
+        <button id="btnComenzarGrabacion">Comenzar</button>
+        <button id="btnDetenerGrabacion">Detener</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
